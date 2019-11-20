@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log Horizon</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <header class="bg-dark">
+        <h1 class="h1 text-white text-center p-3">Log Horizon</h1>
+    </header>
+
+    <main>
+        <section class="row my-4">
+            <form class="form-inline m-auto">
+                <div class="form-group mx-sm-3 mb-2">
+                    <input type="text" class="form-control" id="usernameInput" placeholder="Username...">
+                </div>
+                <button type="button" class="btn btn-dark mb-2" id="loginBtn" onclick="logIn()">Set Username</button>
+            </form>
+        </section>
+
+        <hr class="hr bg-dark" style="height: 2px">
+
+        <h2 class="h2 text-center p-1 pb-3">Log Message</h2>
+
+        <div class="container">
+            <section class="row pb-3">
+                <div class="form-group mx-sm-3 mb-2 col-6">
+                    <input type="text" class="form-control" id="messageInput" placeholder="Message...">
+                </div>
+
+                <div class="form-group border border-success px-3 py-2 rounded">
+                    <input type="radio" name="radio" value="Success" id="success"/>Success
+                </div>
+
+                <div class="form-group border border-info px-3 py-2 rounded mx-3">
+                    <input type="radio" name="radio" value="Info" id="info" checked/>Info
+                </div>
+
+                <div class="form-group border border-danger px-3 py-2 rounded">
+                    <input type="radio" name="radio" value="Error" id="error"/>Error
+                </div>
+
+                <div class="border-left border-dark ml-5 pl-4">
+                    <button id="logBtn" class="btn btn-dark px-4 py-2" onclick="attachEvents()">Log</button>
+                </div>
+            </section>
+        </div>
+
+        <hr class="hr bg-dark" style="height: 2px">
+
+        <h2 class="h2 text-center p-1 pb-3">Log a Message</h2>
+
+        <div id="logs" class="container">
+            <h2 class="h2 text-center text-secondary" id="emptyDb">They are currently no logs in database...</h2>
+        </div>
+    </main>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom-course.js"></script>
+</body>
+</html>

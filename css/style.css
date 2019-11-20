@@ -1,0 +1,9 @@
+hr {
+    height: 2px;
+}
+
+#vertical {
+    vertical-align: middle;
+    width: 2px;
+    height: 39px;
+}

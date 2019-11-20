@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log Horizon</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="h1 bg-dark text-white  p-2">Log Horizont</h1>
+        <div>
+            <input type="text" placeholder="Username..." id="user" class=" p-1 pl-2 rounded">
+            <input type="button" id="login" value="Set Username" onclick="login()" class="rounded bg-dark text-white border-0 p-2 m-2">
+        </div>
+        <hr class="bg-dark">
+
+        <h3 class="h3 ">Log a Message</h3>
+        <div>
+            <input type="text" placeholder="Message..." id="message" class="d-inline-block w-25 pl-2 rounded">
+            <div class="d-inline-block">
+                <button class="ml-2 mr-1 border-success text-success pt-2 pb-2 pl-3 pr-3 rounded bg-white">
+                    <input type="radio" name="radio" value="Success" id="success" /> Success
+                </button>
+                <button class="border-info text-info mr-1  rounded bg-white pr-5 pl-2 pt-2 pb-2">
+                    <input type="radio" name="radio" value="Info" id="info" /> Info
+                </button>
+                <button class="border-danger text-danger pr-5 pl-2 pt-2 pb-2 rounded bg-white">
+                    <input type="radio" name="radio" value="Error" id="error"/> Error
+                </button>
+            </div>
+            <hr class="d-inline-block ml-5 mr-2 bg-secondary" id="vertical">
+            <button onclick="log()" class="bg-dark text-white pt-2 pb-2 border-0 rounded pl-4 pr-4">Log</button>
+            <hr class="bg-dark">
+            <div id="database">
+                <h3 class="h3">Logs</h3>
+                <h3 id="delete" class="h3 text-secondary">They are currently no logs in database...</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
